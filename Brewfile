@@ -18,6 +18,8 @@ cask 'gcc-arm-embedded'
 cask 'font-fira-code-nerd-font'
 cask 'font-sf-mono-nerd-font'
 cask 'ableton-live-suite'
+cask 'backblaze'
+cask 'carbon-copy-cloner'
 
 # Binaries
 brew 'exa'
