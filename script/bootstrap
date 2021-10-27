@@ -27,6 +27,15 @@ fail () {
   exit
 }
 
+setup_ssh () {
+  if ! [ -f ~/.ssh/id_rsa ]
+  then
+    info 'ssh-keygen'
+    yes | ssh-keygen -P ''
+    success 'ssh-keygen'
+  fi
+}
+
 setup_gitconfig () {
   if ! [ -f git/gitconfig.local.symlink ]
   then
@@ -137,8 +146,16 @@ install_dotfiles () {
   done
 }
 
+install_rosetta () {
+  info "installing rosetta"
+  sudo softwareupdate --install-rosetta --agree-to-license
+  success "installed rosetta"
+}
+
+setup_ssh
 setup_gitconfig
 install_dotfiles
+install_rosetta
 
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
