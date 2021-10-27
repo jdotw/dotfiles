@@ -42,6 +42,10 @@ defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -a
 defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771298</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771303</integer></dict>'
 defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771302</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771299</integer></dict>'
 
+# Disable Handoff
+sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityAdvertisingAllowed -bool no
+sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityReceivingAllowed -bool no
+
 # Copy Dock preferences
 cp ~/.dotfiles/macos/com.apple.dock.plist ~/Library/Preferences/com.apple.dock.plist
 killall -9 Dock
