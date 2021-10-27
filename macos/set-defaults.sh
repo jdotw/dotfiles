@@ -54,3 +54,6 @@ killall -9 Dock
 
 # Prevent sleep on power
 sudo pmset -c sleep 0
+
+# Set Screenlock to immediate
+sysadminctl -screenLock immediate -password -
