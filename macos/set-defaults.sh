@@ -26,10 +26,6 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-# Run the screensaver if we're in the bottom-left hot corner.
-defaults write com.apple.dock wvous-bl-corner -int 5
-defaults write com.apple.dock wvous-bl-modifier -int 0
-
 # Hide Safari's bookmark bar.
 defaults write com.apple.Safari ShowFavoritesBar -bool false
 
@@ -45,4 +41,8 @@ defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -a
 defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771303</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771298</integer></dict>'
 defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771298</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771303</integer></dict>'
 defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771302</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771299</integer></dict>'
+
+# Copy Dock preferences
+cp ~/.dotfiles/macos/com.apple.dock.plist ~/Library/Preferences/com.apple.dock.plist
+killall -9 Dock
 
