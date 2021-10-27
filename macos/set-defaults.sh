@@ -39,3 +39,10 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
+
+# Switch Keyboard Modifiers for External Keyboard (Steel Series Apex 7 TKL)
+defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771299</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771302</integer></dict>'
+defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771303</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771298</integer></dict>'
+defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771298</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771303</integer></dict>'
+defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771302</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771299</integer></dict>'
+
