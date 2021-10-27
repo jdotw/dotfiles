@@ -52,3 +52,5 @@ sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.cor
 cp ~/.dotfiles/macos/com.apple.dock.plist ~/Library/Preferences/com.apple.dock.plist
 killall -9 Dock
 
+# Prevent sleep on power
+sudo pmset -c sleep 0
