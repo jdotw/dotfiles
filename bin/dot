@@ -39,6 +39,9 @@ while test $# -gt 0; do
 done
 
 export ZSH=$HOME/.dotfiles
+if [[ "$(arch)" == "arm64" ]]; then
+  export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+fi
 
 # Set macOS defaults
 $ZSH/macos/set-defaults.sh
