@@ -98,6 +98,18 @@
         "options": {
           "full_name": "ableton-live-suite"
         }
+      },
+      "backblaze": {
+        "version": "8.0.1.540",
+        "options": {
+          "full_name": "backblaze"
+        }
+      },
+      "carbon-copy-cloner": {
+        "version": "6.0.4.7225",
+        "options": {
+          "full_name": "carbon-copy-cloner"
+        }
       }
     },
     "brew": {
@@ -254,7 +266,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.3.1",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "8feb900f0b636a26345627f6c42cb4a0f49bcf2a",
+        "Homebrew/homebrew-core": "fd6d84212737e28e4726688434997ff29850e8f9",
         "CLT": "13.1.0.0.1.1633545042",
         "Xcode": "13.0",
         "macOS": "12.0"
