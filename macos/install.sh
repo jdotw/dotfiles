@@ -10,3 +10,10 @@ fi
 
 echo "› sudo softwareupdate -i -a"
 sudo softwareupdate -i -a
+
+echo "› copying backgrounds..."
+BACKGROUNDS_PATH=~/Pictures/Backgrounds
+if ! [ -d $BACKGROUNDS_PATH ]; then
+  mkdir $BACKGROUNDS_PATH
+fi
+cp ~/.dotfiles/macos/backgrounds/* $BACKGROUNDS_PATH
