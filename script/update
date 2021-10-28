@@ -27,15 +27,15 @@ fail () {
   exit
 }
 
-# Install Brewfile
-info "installing from Brewfile"
-brew bundle --file Brewfile
-success "installed from Brewfile"
+# Install software updates
+info "installing macOS software updates"
+sudo softwareupdate -i -a
+success "installed macOS software updates"
 
-# Find the installers and run them iteratively
-info "running installers"
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
-success "finished running installers"
+# Upgrade homebrew
+info "updating homebrew"
+brew update
+success "homebrew updated"
 
-success "install finished!"
+success "update finished!"
 
