@@ -7,6 +7,24 @@
 #
 # Run ./set-defaults.sh and you'll be good to go.
 
+info () {
+  printf "\r  [ \033[00;34m..\033[0m ] $1\n"
+}
+
+user () {
+  printf "\r  [ \033[0;33m??\033[0m ] $1\n"
+}
+
+success () {
+  printf "\r\033[2K  [ \033[00;32mOK\033[0m ] $1\n"
+}
+
+fail () {
+  printf "\r\033[2K  [\033[0;31mFAIL\033[0m] $1\n"
+  echo ''
+  exit
+}
+
 # Enable Scroll to Zoom
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad HIDScrollZoomModifierMask -int 262144
 defaults write com.apple.AppleMultitouchTrackpad HIDScrollZoomModifierMask -int 262144
@@ -26,7 +44,6 @@ chflags nohidden ~/Library
 # Set a really fast key repeat with short delay
 defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
-
 
 # Set the Finder prefs for showing a few different volumes on the Desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
@@ -49,8 +66,8 @@ defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -a
 defaults -currentHost write -g com.apple.keyboard.modifiermapping.4152-5656-0 -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771302</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771299</integer></dict>'
 
 # Disable Handoff
-sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityAdvertisingAllowed -bool no
-sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityReceivingAllowed -bool no
+defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityAdvertisingAllowed -bool no
+defaults write "$HOME/Library/Preferences/ByHost/com.apple.coreservices.useractivityd.plist" ActivityReceivingAllowed -bool no
 
 # Copy Dock preferences
 cp ~/.dotfiles/macos/com.apple.dock.plist ~/Library/Preferences/com.apple.dock.plist
@@ -60,7 +77,11 @@ killall -9 Dock
 cp ~/.dotfiles/macos/com.apple.ncprefs.plist ~/Library/Preferences/com.apple.ncprefs.plist
 
 # Prevent sleep on power
+info "setting power management config (may require password)"
 sudo pmset -c sleep 0
+success "power management config set"
 
 # Set Screenlock to immediate
+info "setting screen lock config (requires password)"
 sysadminctl -screenLock immediate -password -
+success "screen lock config set"
