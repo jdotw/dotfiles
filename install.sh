@@ -2,7 +2,7 @@
 #
 # bootstrap installs things.
 
-cd "$(dirname "$0")/.."
+cd "$(dirname "$0")"
 DOTFILES_ROOT=$(pwd -P)
 
 set -e
@@ -34,7 +34,12 @@ success "installed from Brewfile"
 
 # Find the installers and run them iteratively
 info "running installers"
-find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
+for installer in $(find . -name install.sh -not -path './install.sh')
+do 
+  info "running installer ${installer}"
+  sh -c "${installer}"
+  success "finished running installer ${installer}"
+done
 success "finished running installers"
 
 success "install finished!"
