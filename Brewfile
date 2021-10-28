@@ -26,4 +26,8 @@ brew 'exa'
 brew 'open-ocd'
 brew 'nvm'
 brew 'starship'
+brew 'diffutils'
+brew 'clang-format'
+brew 'llvm'
+brew 'gnu-sed'
 
