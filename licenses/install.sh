@@ -1,3 +1,7 @@
-#!/bin/bash
+#!/bin/zsh
 
-cp ~/.dotfiles/licenses/daisydisk ~/Library/Application\ Support/DaisyDisk
+DAISYDISK_PATH=~/Library/Application\ Support/DaisyDisk
+if ! [ -d $DAISYDISK_PATH ]; then
+  mkdir $DAISYDISK_PATH
+fi
+cp ~/.dotfiles/licenses/daisydisk $DAISYDISK_PATH/License.DaisyDisk
