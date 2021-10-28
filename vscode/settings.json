@@ -1,0 +1,65 @@
+{
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontSize": 16,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "azureFunctions.showDeploySubpathWarning": false,
+  "azure.resourceFilter": [
+    "e6f7977f-f3ad-42a4-890c-3614ebc5a375/edf345f1-49e9-4e45-a84d-5821fde05d32",
+    "10b0a12f-e1cb-4c84-b0ce-f3703b9be881/afcd6287-9191-4633-86c7-bd9d2d09b511",
+    "10b0a12f-e1cb-4c84-b0ce-f3703b9be881/eef8a710-8d0e-4dc7-9823-87c7d09af173",
+    "10b0a12f-e1cb-4c84-b0ce-f3703b9be881/c6a384c7-9fda-422e-81d6-7754a24d7552",
+    "10b0a12f-e1cb-4c84-b0ce-f3703b9be881/55cc2302-e523-45e7-80b1-775b39e1e10e",
+    "10b0a12f-e1cb-4c84-b0ce-f3703b9be881/7422cefb-99df-469d-9dae-7f29bfe71289"
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.onTaskErrors": "debugAnyway",
+  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+  "terminal.integrated.fontSize": 18,
+  "azureFunctions.showProjectWarning": false,
+  "http.proxyAuthorization": null,
+  "replacerules.rules": {
+    "Replace with Typed Output": {
+        "find": "^\\s*(.*):\\s+(.*)$",
+        "replace": "output $1 string = $2",
+        "flags": "gm"
+      },
+  },
+  "terminal.integrated.fontFamily": "SFMono Nerd Font",
+  "terminal.integrated.customGlyphs": false,
+  "terminal.integrated.fontWeight": "100",
+  "editor.fontFamily": "SFMono Nerd Font",
+  "editor.fontWeight": "400",
+  "window.zoomLevel": 1,
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+  "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
+  "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
+  "stm32-for-vscode.makePath": "/usr/bin/make",
+  "stm32-for-vscode.openOCDPath": "/usr/local/bin/openocd",
+  "stm32-for-vscode.armToolchainPath": "/Applications/ARM/bin",
+  "cortex-debug.armToolchainPath": "/Applications/ARM/bin",
+  "cortex-debug.openocdPath": "/usr/local/bin/openocd",
+  "cortex-debug.stlinkPath": "/usr/local/bin/stlink-server",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
