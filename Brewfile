@@ -3,10 +3,10 @@ tap 'homebrew/cask-fonts'
 tap 'epk/epk'
 
 # Cask
+cask 'kicad'
 cask 'iterm2'
 cask 'daisydisk'
 cask 'visual-studio-code'
-cask 'kicad'
 cask 'proxyman'
 cask 'messenger'
 cask 'discord'
