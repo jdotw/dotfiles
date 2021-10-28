@@ -7,6 +7,10 @@
 #
 # Run ./set-defaults.sh and you'll be good to go.
 
+# Enable Scroll to Zoom
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.AppleMultitouchTrackpad HIDScrollZoomModifierMask -int 262144
+
 # Disable press-and-hold for keys in favor of key repeat.
 defaults write -g ApplePressAndHoldEnabled -bool false
 
@@ -51,6 +55,9 @@ sudo -u $(whoami) defaults write "$HOME/Library/Preferences/ByHost/com.apple.cor
 # Copy Dock preferences
 cp ~/.dotfiles/macos/com.apple.dock.plist ~/Library/Preferences/com.apple.dock.plist
 killall -9 Dock
+
+# Copy NotificationCenter Prefs
+cp ~/.dotfiles/macos/com.apple.ncprefs.plist ~/Library/Preferences/com.apple.ncprefs.plist
 
 # Prevent sleep on power
 sudo pmset -c sleep 0
