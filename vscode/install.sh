@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-VSCODE_SETTINGS_PATH=$HOME/Library/Application Support/Code/User
+VSCODE_SETTINGS_PATH=$HOME/Library/Application\ Support/Code/User
 if ! [ -d $VSCODE_SETTINGS_PATH ]; then
   mkdir -r $VSCODE_SETTINGS_PATH
 fi
