@@ -5,3 +5,5 @@ then
     sudo npm install spoof -g
   fi
 fi
+
+nvm install --lts
