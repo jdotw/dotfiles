@@ -45,7 +45,6 @@
   "terminal.integrated.fontWeight": "100",
   "editor.fontFamily": "SFMono Nerd Font",
   "editor.fontWeight": "400",
-  "window.zoomLevel": 1,
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
   "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",

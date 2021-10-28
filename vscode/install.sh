@@ -7,16 +7,20 @@ fi
 
 ln -sf $HOME/.dotfiles/vscode/settings.json $VSCODE_SETTINGS_PATH/settings.json
 
-code --install-extension bierner.markdown-mermaid
-code --install-extension bmd.stm32-for-vscode
-code --install-extension dan-c-underwood.arm
-code --install-extension dsznajder.es7-react-js-snippets
-code --install-extension eamodio.gitlens
-code --install-extension esbenp.prettier-vscode
-code --install-extension hediet.vscode-drawio
-code --install-extension marus25.cortex-debug
-code --install-extension marus25.cortex-debug-dp-stm32f4
-code --install-extension ms-vscode.cpptools
-code --install-extension shd101wyy.markdown-preview-enhanced
-code --install-extension yzane.markdown-pdf
-code --install-extension yzhang.markdown-all-in-one
+install_extension () {
+  code --install-extension $1 > /dev/null
+}
+
+install_extension bierner.markdown-mermaid
+install_extension bmd.stm32-for-vscode
+install_extension dan-c-underwood.arm
+install_extension dsznajder.es7-react-js-snippets
+install_extension eamodio.gitlens
+install_extension esbenp.prettier-vscode
+install_extension hediet.vscode-drawio
+install_extension marus25.cortex-debug
+install_extension marus25.cortex-debug-dp-stm32f4
+install_extension ms-vscode.cpptools
+install_extension shd101wyy.markdown-preview-enhanced
+install_extension yzane.markdown-pdf
+install_extension yzhang.markdown-all-in-one
