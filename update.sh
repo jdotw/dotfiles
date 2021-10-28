@@ -27,15 +27,15 @@ fail () {
   exit
 }
 
-# Install software updates
-info "installing macOS software updates"
-sudo softwareupdate -i -a
-success "installed macOS software updates"
-
-# Upgrade homebrew
-info "updating homebrew"
-brew update
-success "homebrew updated"
+# Find the installers and run them iteratively
+info "running update scripts"
+for installer in $(find . -name update.sh -not -path './update.sh')
+do 
+  info "running update script ${installer}"
+  sh -c "${installer}"
+  success "finished running update script ${installer}"
+done
+success "finished update scripts"
 
 success "update finished!"
 

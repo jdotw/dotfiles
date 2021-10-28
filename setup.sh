@@ -147,4 +147,15 @@ setup_gitconfig
 install_dotfiles
 setup_macos_default
 
+# Find the installers and run them iteratively
+info "running setup scripts"
+for script in $(find . -name setup.sh -not -path './setup.sh')
+do
+  info "running setup script ${script}"
+  sh -c "${script}"
+  success "finished running setup script ${script}"
+done
+success "finished running setup script"
+
+
 success "setup finished!"
