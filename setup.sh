@@ -137,15 +137,8 @@ install_dotfiles () {
   success 'installed dotfiles'
 }
 
-setup_macos_default () {
-  info "setting macOS defaults"
-  macos/set-defaults.sh
-  success "macOS defaults set"
-}
-
 setup_gitconfig
 install_dotfiles
-setup_macos_default
 
 # Find the installers and run them iteratively
 info "running setup scripts"
