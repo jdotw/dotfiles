@@ -25,6 +25,10 @@ fail () {
   exit
 }
 
+# This must be run because the zsh config
+# wont be present yet
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Install Brewfile
 info "installing from Brewfile"
 brew bundle --file Brewfile
