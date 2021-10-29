@@ -47,11 +47,11 @@ install_homebrew() {
   else 
     success "homebrew already installed"
   fi
-
-  exit 0
 }
 
 install_rosetta
 install_homebrew
 
 success "bootstrap completed!"
+
+./install.sh
