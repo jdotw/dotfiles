@@ -150,5 +150,6 @@ do
 done
 success "finished running setup script"
 
-
 success "setup finished!"
+
+sudo reboot
