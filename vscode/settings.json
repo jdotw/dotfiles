@@ -53,12 +53,14 @@
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyFunction": true,
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
   "stm32-for-vscode.makePath": "/usr/bin/make",
-  "stm32-for-vscode.openOCDPath": "/usr/local/bin/openocd",
+  "stm32-for-vscode.openOCDPath": "/opt/homebrew/bin/openocd",
   "stm32-for-vscode.armToolchainPath": "/Applications/ARM/bin",
   "cortex-debug.armToolchainPath": "/Applications/ARM/bin",
   "cortex-debug.openocdPath": "/usr/local/bin/openocd",
   "cortex-debug.stlinkPath": "/usr/local/bin/stlink-server",
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "C_Cpp.clang_format_path": "/opt/homebrew/bin/clang-format",
+  "window.zoomLevel": -1
 }
