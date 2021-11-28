@@ -62,5 +62,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "C_Cpp.clang_format_path": "/opt/homebrew/bin/clang-format",
-  "redhat.telemetry.enabled": true
+  "redhat.telemetry.enabled": true,
+  "window.zoomLevel": 1
 }
