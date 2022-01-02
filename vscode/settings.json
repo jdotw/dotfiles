@@ -63,5 +63,9 @@
   },
   "C_Cpp.clang_format_path": "/opt/homebrew/bin/clang-format",
   "redhat.telemetry.enabled": true,
+  "opa.path": "/Users/jwilson/opa",
+  "files.associations": {
+    "*.yaml": "yaml"
+  },
   "window.zoomLevel": 1
 }
