@@ -30,4 +30,7 @@ brew 'diffutils'
 brew 'clang-format'
 brew 'llvm'
 brew 'gnu-sed'
-
+brew 'jq'
+brew 'k9s'
+brew 'eksctl'
+brew 'kubectl'

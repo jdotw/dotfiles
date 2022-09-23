@@ -4,7 +4,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -29,16 +29,15 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "debug.onTaskErrors": "debugAnyway",
-  "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6ODI3LFwiaGVpZ2h0XCI6MTE2OX0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
   "terminal.integrated.fontSize": 18,
   "azureFunctions.showProjectWarning": false,
   "http.proxyAuthorization": null,
   "replacerules.rules": {
     "Replace with Typed Output": {
-        "find": "^\\s*(.*):\\s+(.*)$",
-        "replace": "output $1 string = $2",
-        "flags": "gm"
-      },
+      "find": "^\\s*(.*):\\s+(.*)$",
+      "replace": "output $1 string = $2",
+      "flags": "gm"
+    }
   },
   "terminal.integrated.fontFamily": "SFMono Nerd Font",
   "terminal.integrated.customGlyphs": false,
@@ -67,5 +66,19 @@
   "files.associations": {
     "*.yaml": "yaml"
   },
-  "window.zoomLevel": 1
+  "go.toolsManagement.autoUpdate": true,
+  "explorer.autoReveal": false,
+  "[helm]": {
+    "editor.formatOnSave": false
+  },
+  "hediet.vscode-drawio.codeLinkActivated": true,
+  "vs-kubernetes": {
+    "vscode-kubernetes.minikube-path.mac": "/Users/jwilson/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+    "vs-kubernetes.crd-code-completion": "disabled"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cmake.configureOnOpen": false,
+  "git.confirmSync": false
 }
