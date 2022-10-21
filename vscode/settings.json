@@ -53,7 +53,7 @@
   "C_Cpp.vcFormat.newLine.closeBraceSameLine.emptyType": true,
   "stm32-for-vscode.makePath": "/usr/bin/make",
   "stm32-for-vscode.openOCDPath": "/opt/homebrew/bin/openocd",
-  "stm32-for-vscode.armToolchainPath": "/Applications/ARM/bin",
+  "stm32-for-vscode.armToolchainPath": "/opt/homebrew/bin",
   "cortex-debug.armToolchainPath": "/Applications/ARM/bin",
   "cortex-debug.openocdPath": "/usr/local/bin/openocd",
   "cortex-debug.stlinkPath": "/usr/local/bin/stlink-server",

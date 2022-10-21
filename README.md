@@ -50,6 +50,13 @@ There's a few special files in the hierarchy.
   but still keep those autoloaded files in your home directory. These get
   symlinked in when you run `~/.dotfiles/setup.sh`.
 
+## Manual Setup
+
+I have not automated the following (yet):
+
+- Backblaze install and setup (the cask doesnt work)
+- Launch iStat Menus for initial setup
+
 ## Bugs
 
 I want this to work for everyone; that means when you clone it down it should
