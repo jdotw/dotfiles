@@ -1,3 +1,8 @@
+if [[ $DOTFILES_MINIMAL == 1 ]]; then
+  echo "Skipping macos/install.sh due to minimal setup..."
+  exit 0
+fi
+
 if test ! "$(uname)" = "Darwin"
   then
   exit 0

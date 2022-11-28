@@ -1,5 +1,10 @@
 #!/bin/zsh
 
+if [[ $DOTFILES_MINIMAL == 1 ]]; then
+  echo "Skipping vscode/install.sh due to minimal setup..."
+  exit 0
+fi
+
 install_extension () {
   code --install-extension $1 > /dev/null
 }
