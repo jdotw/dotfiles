@@ -52,4 +52,4 @@ success "finished running installers"
 
 success "install finished!"
 
-#./setup.sh
+./setup.sh
