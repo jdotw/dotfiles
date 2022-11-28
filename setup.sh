@@ -142,7 +142,7 @@ install_dotfiles
 
 # Find the installers and run them iteratively
 info "running setup scripts"
-export DOTFILES_MINIMAL=1
+export DOTFILES_MINIMAL=0
 for script in $(find . -name setup.sh -not -path './setup.sh')
 do
   info "running setup script ${script}"
