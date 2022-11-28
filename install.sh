@@ -27,7 +27,12 @@ fail () {
 
 # This must be run because the zsh config
 # wont be present yet
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -e "/opt/homebrew/bin/brew" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+if [ -e "/usr/local/bin/brew" ]; then
+  eval "$(/usr/local/bin/brew shellenv)"
+fi
 
 # Install Brewfile
 info "installing from Brewfile"
@@ -47,4 +52,4 @@ success "finished running installers"
 
 success "install finished!"
 
-./setup.sh
+#./setup.sh
