@@ -29,7 +29,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "debug.onTaskErrors": "debugAnyway",
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontSize": 14,
   "azureFunctions.showProjectWarning": false,
   "http.proxyAuthorization": null,
   "replacerules.rules": {
@@ -80,5 +80,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "cmake.configureOnOpen": false,
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "terminal.integrated.scrollback": 1000000000,
+  "window.zoomLevel": -1,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "[csharp]": {
+  
+  }
 }
