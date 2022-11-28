@@ -26,13 +26,17 @@ fail () {
 }
 
 install_rosetta () {
-  if ! [ -f /Library/Apple/System/Library/Receipts/com.apple.pkg.RosettaUpdateAuto.plist ]
-  then
-    info "installing rosetta"
-    sudo softwareupdate --install-rosetta --agree-to-license
-    success "installed rosetta"
-  else 
-    success "rosetta already installed"
+  if [[ $(uname -p) == 'arm' ]]; then
+    if ! [ -f /Library/Apple/System/Library/Receipts/com.apple.pkg.RosettaUpdateAuto.plist ]
+    then
+      info "installing rosetta"
+      sudo softwareupdate --install-rosetta --agree-to-license
+      success "installed rosetta"
+    else 
+      success "rosetta already installed"
+    fi
+  else
+    success "rosetta not needed"
   fi
 }
 
