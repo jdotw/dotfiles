@@ -1,1 +1,3 @@
-source <(argocd completion zsh)
+if [ -e $PATH/argocd ]; then
+  source <(argocd completion zsh)
+fi
