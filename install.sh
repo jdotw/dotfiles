@@ -35,7 +35,7 @@ brew bundle --file Brewfile
 success "installed from Brewfile"
 
 # Find the installers and run them iteratively
-export DOTFILES_MINIMAL=1
+export DOTFILES_MINIMAL=0
 info "running installers"
 for installer in $(find . -name install.sh -not -path './install.sh')
 do 
