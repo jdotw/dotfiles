@@ -4,7 +4,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.fontSize": 14,
+  "editor.fontSize": 13,
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -82,9 +82,27 @@
   "cmake.configureOnOpen": false,
   "git.confirmSync": false,
   "terminal.integrated.scrollback": 1000000000,
-  "window.zoomLevel": -1,
   "rust-analyzer.inlayHints.typeHints.enable": false,
+  "editor.inlineSuggest.enabled": true,
+  "csharp.referencesCodeLens.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "github.copilot.advanced": {},
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[csharp]": {
-  
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "hediet.vscode-drawio.theme": "dark",
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "workbench.editor.showTabs": "single",
+  "omnisharp.loggingLevel": "debug",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
   }
 }
