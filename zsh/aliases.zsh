@@ -2,7 +2,7 @@ alias reload!='. ~/.zshrc'
 
 alias cls='clear' # Good 'ol Clear Screen command
 
-alias ls="exa --git --color=automatic -a -l -b -h"
+alias ls="eza --git --color=automatic -a -l -b -h"
 
 alias diff="/opt/homebrew/bin/diff"
 

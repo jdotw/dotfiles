@@ -21,7 +21,7 @@ case 'microsoft-remote-desktop'
 
 # Binaries
 brew 'node'
-brew 'exa'
+brew 'eza'
 brew 'open-ocd'
 brew 'nvm'
 brew 'starship'
